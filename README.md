@@ -7,8 +7,11 @@ This repository packages Jason Antman's [xfinity-usage](https://github.com/jantm
 Pull the `raws/xfinity-usage:latest` image from [Docker Hub](https://hub.docker.com/r/raws/xfinity-usage/) and run it. By default, the image runs `xfinity-usage -h`, so in order to do anything useful, you'll need to specify your own command.
 
 ```sh
-docker run --rm -e XFINITY_USER=foo -e XFINITY_PASSWORD=s3cr3t raws/xfinity-usage:latest xfinity-usage --graphite
+docker run --rm -e XFINITY_USER=foo -e XFINITY_PASSWORD=s3cr3t \
+  raws/xfinity-usage:latest xfinity-usage --graphite
 ```
+
+See the output of `xfinity-usage -h` for all of the available options.
 
 ## License
 
